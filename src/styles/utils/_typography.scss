@@ -86,7 +86,7 @@
 
 .heading {
   &-7 {
-    h2 {
+    .page-title {
       @extend .heading;
       font-family: 'Montserrat';
       font-size: 14px;
