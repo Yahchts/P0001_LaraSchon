@@ -29,7 +29,7 @@
       @extend .heading-4;
       position: relative;
       margin-top: 36px;
-      color: $color-4;
+      color: $color-3;
 
       &:after {
         content: '';
@@ -86,10 +86,6 @@
 
     &-title {
       @extend .heading-7;
-
-      h6 {
-        color: $color-3;
-      }
     }
 
     &-paragraph {
@@ -114,16 +110,13 @@
     }
 
     &-name {
+      @extend .heading-4;
       margin-top: 16px;
       text-align: right;
 
-      h4 {
-        @extend .heading-4;
-
-        span {
-          @extend .text-3;
-          color: $color-3;
-        }
+      span {
+        @extend .text-3;
+        color: $color-3;
       }
     }
   }
@@ -167,9 +160,6 @@
     &-title {
       @extend .heading-7;
 
-      h6 {
-        color: $color-3;
-      }
     }
 
     &-paragraph {
@@ -187,19 +177,14 @@
     width: 100%;
     background-color: $color-5;
     padding-top: 80px;
-    padding-bottom: 80px;
     @include media('<sm') {
       padding-top: 40px;
       padding-bottom: 40px;
     }
 
     &-title {
-      text-align: center;
       @extend .heading-7;
-
-      h6 {
-        color: $color-3;
-      }
+      text-align: center;
     }
 
     &-list {
@@ -251,7 +236,7 @@
     &-inner {
       background-color: $color-2;
       padding-top: 80px;
-      padding-bottom: 80px;
+      padding-bottom: 160px;
       @include media('<sm') {
         padding-top: 40px;
         padding-bottom: 40px;
@@ -259,15 +244,13 @@
     }
 
     &-head {
+      @extend .heading-4;
+      color: $color-3;
       max-width: 375px;
-      text-align: center;
       margin-left: auto;
       margin-right: auto;
 
-      h4 {
-        @extend .heading-4;
-        color: $color-3;
-      }
+
     }
 
     &-list {
@@ -294,14 +277,14 @@
         margin-left: auto;
         margin-right: auto;
       }
+    }
 
-      p {
-        @extend .text-1;
-        margin-top: 5px;
-        @include media('<sm') {
-          font-size: 14px;
-          line-height: 24px;
-        }
+    &-paragraph {
+      @extend .text-1;
+      margin-top: 5px;
+      @include media('<sm') {
+        font-size: 14px;
+        line-height: 24px;
       }
     }
 

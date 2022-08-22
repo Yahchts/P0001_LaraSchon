@@ -60,7 +60,6 @@ module.exports = (env, argv) => {
 	const IS_SOURCEMAP = argv.sourceMap;
 	const SOURCEMAP = IS_HOST || IS_SOURCEMAP;
 	const DEFAULTS = { description: 'Lara Schön is Austrian premium skin care Brand. \n' +
-			'\n' +
 			'Skin care products are formulated to work with all skin types, not against them. Our luxurious cruelty-free skin care cosmetics delivers real results without side effects.', keywords: 'keywords' };
 
 	/* Methods */

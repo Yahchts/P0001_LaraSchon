@@ -21,11 +21,11 @@
       width: 100%;
     }
 
-    h3 {
+    &-title {
       @extend .heading-3;
     }
 
-    p {
+    &-paragraph {
       @extend .text-1;
       margin-top: 12px;
       color: $color-3;

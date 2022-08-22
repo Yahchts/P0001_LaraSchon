@@ -93,6 +93,7 @@
       line-height: 28px;
       font-weight: 400;
       letter-spacing: 0.2em;
+      color: $color-3;
 
       @include media('<sm') {
         line-height: 22px;
@@ -106,6 +107,7 @@
       line-height: 54px;
       font-weight: 400;
       letter-spacing: 0.2em;
+      color: $color-1;
 
       @include media('<sm') {
         font-size: 28px;
