@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/app/favicon.svg" type="image/svg+xml">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+    <title>Home</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <div class="dark__cover"></div>
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div id="home" class="home">
+            <section class="vision-home">
+                <h1></h1>
+                <div class="vision-home__bg-overlay"></div>
+                <video class="vision-home__video" src="images/app/video.mp4" playsinline autoplay muted loop></video>
+            </section>
+            <section class="home__about">
+                <div class="container">
+                    <div class="home__about-title">
+                        <h2>MEET THE FOUNDER
+                            <span>Who We Are</span>
+                        </h2>
+                    </div>
+                    <div class="home__about-content">
+                        <div class="home__about-image">
+                            <img src="images/img_08.jpg" alt="Lara Schon">
+                        </div>
+                        <div class="home__about-text">
+                            <h3>Why Lara Schön?</h3>
+                            <p class="home__about-paragraph">Since our founding in 2013, we have been guided by one
+                                principle: the desire to provide everyone with effective and safe skin care
+                                solutions.
+                            <p class="home__about-paragraph">Our skincare products are formulated to work with all
+                                skin types, not against them. Whether you're worried about dark circles under your eyes,
+                                hyperpigmentation, acne, redness, fine lines and wrinkles or dehydration, our
+                                luxurious cruelty-free skincare cosmetics delivers real results without side effects.
+                            </p>
+                            <h3>Reputation</h3>
+                            <p class="home__about-paragraph">The key principle of Lara Schön is to enhance cosmetic products quality and effectiveness as well as implement the continuous improvement strategy.  Lara Schön, the brand founder & owner of 2 cosmetic brands Lara Schön & Schön Berg, believes that she is personally responsible to each and every customer for the quality of manufactured skin care products.
+                            </p>
+                            <a class="btn-6" href="about.html">
+                                READ MORE
+                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                    <use xlink:href="images/icons/sprite.svg#arrow_right"></use>
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="banner-home" style="background-image: url(images/bg_06.jpg)">
+                <div class="container">
+                    <div class="banner-home__inner">
+                        <img class="banner-home__image" src="images/app/deco_leaf.svg" alt="banner image">
+                        <h2 class="banner-home__title">Effective and safe<br>skin care solutions</h2>
+                    </div>
+                </div>
+            </section>
+            <section class="home__preferences">
+                <div class="container">
+                    <div class="home__preferences-title">
+                        <h2>PRODUCTION
+                            <span>Our Clean Beauty Favorites</span>
+                        </h2>
+                    </div>
+                    <div class="home__preferences-list">
+                        <div class="home__preferences-item">
+                            <div class="home__preferences-image">
+                                <img src="images/img_03.jpg" alt="oil dots fall to bottle">
+                            </div>
+                            <h3 class="home__preferences-header">Pure Ingredients</h3>
+                        </div>
+                        <div class="home__preferences-item">
+                            <div class="home__preferences-image">
+                                <img src="images/img_04.jpg" alt="two bottles of cream">
+                            </div>
+                            <h3 class="home__preferences-header">Innovative Formulas</h3>
+                        </div>
+                        <div class="home__preferences-item">
+                            <div class="home__preferences-image">
+                                <img src="images/img_05.jpg" alt="fluid goes from bottle to test tube">
+                            </div>
+                            <h3 class="home__preferences-header">Experienced Team</h3>
+                        </div>
+                        <div class="home__preferences-item">
+                            <div class="home__preferences-image">
+                                <img src="images/img_06.jpg" alt="cream spot">
+                            </div>
+                            <h3 class="home__preferences-header">Honesty and Openness to Clients</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="home__plus-inner">
+                <div class="container">
+                    <div class="home__plus-head">
+                        <h4>Our Skin Care Products are:</h4>
+                    </div>
+                    <ul class="home__plus-list">
+                        <li class="home__plus-item">
+                            <img src="images/img_13.svg" alt="rabit">
+                            <p>CRUELTY FREE</p>
+                        </li>
+                        <li class="home__plus-item">
+                            <img src="images/img_14.svg" alt="rabit">
+                            <p>VEGAN</p>
+                        </li>
+                        <li class="home__plus-item">
+                            <img src="images/img_15.svg" alt="rabit">
+                            <p>NON GMO</p>
+                        </li>
+                        <li class="home__plus-item">
+                            <img src="images/img_17.svg" alt="rabit">
+                            <p>ANTIOXIDANT</p>
+                        </li>
+                        <li class="home__plus-item">
+                            <img src="images/img_18.svg" alt="rabit">
+                            <p>CLEAN COSMETIC</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+            <section class="home-products">
+                <div class="container">
+                    <div class="home-products__inner">
+                        <div class="home-products__title">
+                            <h2>OUR TOP RATING
+                                <span>Products</span>
+                            </h2>
+                        </div>
+                        <ul class="cards">
+                            <li class="card-2">
+                                <div class="card-2__item">
+                                    <div class="card-2__image-wrap">
+                                        <img src="images/products/item_01.jpg" class="card__image" alt="card image">
+                                    </div>
+                                    <h6 class="card-2__title">
+                                        MICROBIOME FACE CREAM
+                                    </h6>
+                                    <p class="card-2__description">
+                                        Skin food face cream<br>Multi-peptides
+                                    </p>
+                                    <p class="card-2__description">
+                                        50 ml
+                                    </p>
+                                    <p class="card-2__price">
+                                        €150,00
+                                    </p>
+                                    <a href="products-microbiome_face_cream.html" class="btn-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                        </svg>
+                                        VIEW
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card-2">
+                                <div class="card-2__item">
+                                    <div class="card-2__image-wrap">
+                                        <img src="images/products/item_02.jpg" class="card__image" alt="card image">
+                                    </div>
+                                    <h6 class="card-2__title">
+                                        EYE LIFT CREAM
+                                    </h6>
+                                    <p class="card-2__description">
+                                        Rich, Peptide + Vitamins<br>Anti-Age
+                                    </p>
+                                    <p class="card-2__description">
+                                        15 ml
+                                    </p>
+                                    <p class="card-2__price">
+                                        €120,00
+                                    </p>
+                                    <a href="products-eye_lift_cream.html" class="btn-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                        </svg>
+                                        VIEW
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card-2">
+                                <div class="card-2__item">
+                                    <div class="card-2__image-wrap">
+                                        <img src="images/products/item_03.jpg" class="card__image" alt="card image">
+                                    </div>
+                                    <h6 class="card-2__title">
+                                        HYALURON BOOSTER CREAM
+                                    </h6>
+                                    <p class="card-2__description">
+                                        Rich, Deep Moisturizer<br>Multi-Filler, all skin types
+                                    </p>
+                                    <p class="card-2__description">
+                                        50 ml
+                                    </p>
+                                    <p class="card-2__price">
+                                        €150,00
+                                    </p>
+                                    <a href="products-hyaluron_booster_cream.html" class="btn-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                        </svg>
+                                        VIEW
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="home-products__paragraph">Take your skin to the next level with
+                        </p>
+                        <button class="btn-3" onclick="location.href='products.html'" type="button">ALL PRODUCTS
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section class="home-blog">
+                <div class="container">
+                    <div class="home-blog__title">
+                        <h2>NEWS
+                            <span>Our Blog</span>
+                        </h2>
+                    </div>
+                    <ul class="cards">
+                        <li class="card">
+                            <a class="card__link" href="blog-single-06-08-22.html">
+                                <div class="card__image-wrap">
+                                    <img src="images/img_01.jpg" class="card__image" alt="card image">
+                                </div>
+                                <p class="card__date">
+                                    August 6, 2022
+                                </p>
+                                <h6 class="card__title">
+                                    Be Perfect with Lara Schön Products
+                                </h6>
+                                <p class="card__description">
+                                    Microbiome Skin Food Cream is a new face care product in the Lara Schön line of
+                                    face
+                                    creams. The perfect formula of the cream combines the...
+                                </p>
+                                <div class="card__read-more">READ MORE
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="images/icons/sprite.svg#arrow_right"></use>
+                                    </svg>
+                                </div>
+
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="btn-3" onclick="location.href='blog.html'" type="button">GO TO THE BLOG</button>
+                </div>
+            </section>
+            <section class="home-visit">
+                <div class="home-visit__image">
+                    <img src="images/img_19.jpg" alt="two girls with cosmetics">
+                </div>
+                <div class="home-visit__item">
+                    <h3 class="home-visit__head">Be gorgeous with our second skin care brand</h3>
+                    <a class="home-visit__link" href="https://schon-berg.com">
+                        <img class="home-visit__link-image" src="images/app/logo_02.svg" alt="schonberg logo">
+                    </a>
+                    <p class="home-visit__paragraph">Press logo to be inspired</p>
+                </div>
+            </section>
+            <section class="home-contact__form">
+                <div class="form__popup">
+                    <div class="form__popup-top">
+                        <div class="form__popup-image">
+                            <img src="images/app/success.svg" alt="success icon">
+                        </div>
+                        <h3 class="form__popup-header">Success!</h3>
+                    </div>
+                    <div class="form__popup-bottom">
+                        <p class="form__popup-paragraph">Your message has been
+                            sent successfully</p>
+                        <button class="form__popup-button btn-3">OK, THANKS</button>
+                    </div>
+                </div>
+
+                <form class="form">
+                    <div class="form__title">
+                        <h2>GET IN TOUCH</h2>
+                        <span>Contact Us</span>
+                        <p>If you have questions or suggestions for us, do not hesitate, we will be happy to reply
+                            you</p>
+                    </div>
+                    <div class="form__wrapper">
+                        <div class="form__item">
+                            <label for="sender_name">Name</label>
+                            <input type="text" id="sender_name" name="sender_name" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="sender_email">Email</label>
+                            <input type="email" id="sender_email" name="sender_email" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="sender_message">Message</label>
+                            <textarea type="textarea" id="sender_message" name="sender_message" required></textarea>
+                        </div>
+                        <button id="form-button" class="btn-1 center" type="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use xlink:href="images/icons/sprite.svg#paper_plane"></use>
+                            </svg>
+                            SEND
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+
+</div>
+</body>
+</html>

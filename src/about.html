@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/app/favicon.svg" type="image/svg+xml">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+    <title>About Us</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div id="about">
+            <section class="vision" style="background-image: url(images/bg_07.jpg)">
+                <h1 class="vision__title">ABOUT US</h1>
+            </section>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li><a class="breadcrumbs__item" href="/">HOME</a></li>
+                    <li><a class="breadcrumbs__item" href="#">ABOUT US</a></li>
+                </ul>
+            </div>
+            <section class="about__quote">
+                <div class="container">
+                    <div class="about__quote-head">
+                        <div class="about__quote-image">
+                            <img src="images/app/deco_leaf-3.svg" alt="decoration image">
+                        </div>
+                        <h4 class="about__quote-title">“Our skin is silk, the most delicate
+                            and luxurious gift of nature.<br>
+                            Love it, take care of it and enjoy the result”</h4>
+                        <p class="about__quote-name">Lara Schön</p>
+                    </div>
+                </div>
+            </section>
+            <section class="about__founder">
+                <div class="container">
+                    <div class="about__founder-image">
+                        <img src="images/img_08.jpg" alt="Lara Schon">
+                    </div>
+                    <div class="about__founder-text">
+                        <div class="about__founder-title">
+                            <h2>MEET THE FOUNDER
+                                <span>Who We Are</span>
+                            </h2>
+                        </div>
+                        <p class="about__founder-paragraph">Since our founding in 2013, we have been guided by one
+                            principle: the desire to provide everyone with effective and safe skin care solutions.
+                        </p>
+                        <p class="about__founder-paragraph">Our skincare products are formulated to work with all skin
+                            types, not against them. Whether you're worried about dark circles under your eyes,
+                            hyperpigmentation, acne, redness, fine lines and wrinkles or dehydration, our luxurious
+                            cruelty-free skincare cosmetics delivers real results without side effects.
+                        </p>
+                        <p class="about__founder-paragraph">All of our skincare products are free from parabens, mineral
+                            oil, sodium lauryl sulphate, artificial colours and fragrances. We are 100% cruelty-free -
+                            with no exceptions.
+                        </p>
+                        <p class="about__founder-paragraph">In our skin care products we use the highest quality
+                            ingredients and unique technologies that enable to keep their valuable properties.
+                        </p>
+                        <p class="about__founder-paragraph">Floral waxes, phytoestrogens, plant stem cells, seaweed and
+                            snow algae complexes, enzymes, encapsulated collagen and elastin, vitamins, bioengineered
+                            growth factors, floral and plant essential oils – all the ingredients originate from
+                            eco-friendly areas. We select the suppliers that comply with environmentally conscious
+                            methods of plant growing and green production process flow.
+                        </p>
+                        <p class="about__founder-paragraph">We highly appreciate Your choice of our skin care products.
+                        </p>
+                        <p class="about__founder-paragraph">Caring of your beauty and youth.
+                        </p>
+
+                        <img class="about__founder-sign" src="images/app/sign.svg" alt="Lara Schon sign">
+                        <div class="about__founder-name">
+                            <h4>Lara Schön
+                                <span>Founder and Chief Visionary</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about__company">
+                <div class="container">
+                    <div class="about__company-text">
+                        <div class="about__company-title">
+                            <h2>OUR COMPANY
+                                <span>Vision & Philosophy</span>
+                            </h2>
+                        </div>
+                        <p class="about__company-paragraph">The key principle of Lara Schön is to enhance cosmetic
+                            products quality and effectiveness as well as implement the continuous improvement strategy.
+                            Lara Schön the brand founder & owner of 2 cosmetic brands Lara Schön & Schön Berg believes
+                            that she is personally responsible to each and every customer for the quality of
+                            manufactured skin care products.
+                        </p>
+                        <p class="about__company-paragraph">The trust that our beauty products have gained over years is
+                            supported by the use of traditional formulations, introduction of innovative solutions,
+                            experienced team, the principles of integrity and transparency to our clients.
+                        </p>
+                    </div>
+                    <div class="about__company-image">
+                        <img src="images/img_07.jpg" alt="plate moisture">
+                    </div>
+                </div>
+            </section>
+            <section class="about__whyus">
+                <div class="container">
+                    <div class="about__whyus-title">
+                        <h2>WHY US
+                            <span>Our Benefits</span>
+                        </h2>
+                    </div>
+                    <ul class="about__whyus-list">
+                        <li class="about__whyus-item">
+                            <img src="images/img_10.svg" alt="leaf icon">
+                            <h3>NATURAL COMPONENTS</h3>
+                            <p>We only use pure ingredients</p>
+                        </li>
+                        <li class="about__whyus-item">
+                            <img src="images/img_11.svg" alt="leaf icon">
+                            <h3>EFFECTIVE CARE</h3>
+                            <p>Use our cosmetics in everyday life
+                                and you will see the result</p>
+                        </li>
+                        <li class="about__whyus-item">
+                            <img src="images/img_12.svg" alt="leaf icon">
+                            <h3>HIGH QUALITY</h3>
+                            <p>From rich textures to simple packaging</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner" style="background-image: url(images/bg_05.jpg)">
+                    <div class="banner-inner">
+                        <img class="banner-image" src="images/app/deco_leaf.svg" alt="banner image">
+                        <h2 class="banner-title">Our Premium Skin Care<br>for your beauty</h2>
+                        <a href="products.html" class="btn-2">
+                            VIEW ALL PRODUCTS
+                        </a>
+                    </div>
+                </div>
+                <div class="about__plus-inner">
+                    <div class="container">
+                        <div class="about__plus-head">
+                            <h4>Our Skin Care Products are:</h4>
+                        </div>
+                        <ul class="about__plus-list">
+                            <li class="about__plus-item">
+                                <img src="images/img_13.svg" alt="rabit">
+                                <p>CRUELTY FREE</p>
+                            </li>
+                            <li class="about__plus-item">
+                                <img src="images/img_14.svg" alt="rabit">
+                                <p>VEGAN</p>
+                            </li>
+                            <li class="about__plus-item">
+                                <img src="images/img_15.svg" alt="rabit">
+                                <p>NON GMO</p>
+                            </li>
+                            <li class="about__plus-item">
+                                <img src="images/img_17.svg" alt="rabit">
+                                <p>ANTIOXIDANT</p>
+                            </li>
+                            <li class="about__plus-item">
+                                <img src="images/img_18.svg" alt="rabit">
+                                <p>CLEAN COSMETIC</p>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

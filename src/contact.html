@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/app/favicon.svg" type="image/svg+xml">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+    <title>Contact</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <div class="dark__cover"></div>
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div id="contact">
+            <section class="vision" style="background-image: url(images/bg_03.jpg)">
+                <h1 class="vision__title">CONTACT</h1>
+            </section>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li><a class="breadcrumbs__item" href="/">HOME</a></li>
+                    <li><a class="breadcrumbs__item" href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__content">
+                        <div class="contact__words">
+                            <h3 class="contact__content-title">Keep In Touch</h3>
+                            <p>We are here for you, you can contact us in any way
+                                convenient for you</p>
+                        </div>
+                        <div class="contact__desc">
+                            <div class="contact__desc-wrap">
+                                <span>Adress:</span>
+                                <p class="contact__desc-text">
+                                    Austria, 4816 Gschwandt, Unterm Wald 18
+                                </p>
+                            </div>
+                            <div class="contact__desc-wrap">
+                                <span>Call Us:</span>
+                                <p class="contact__desc-text">
+                                    +43 (76) 126-76-07
+                                </p>
+                            </div>
+                            <div class="contact__desc-wrap">
+                                <span>Email Us:</span>
+                                <a href="emailto:info@laraschoen.com" class="contact__desc-text green">
+                                    info@laraschoen.com
+                                </a>
+                            </div>
+                            <div class="contact__desc-wrap">
+                                <span>Follow Us:</span>
+                                <div class="contact__social">
+                                    <ul class="contact__social-list green">
+                                        <li class="contact__social-item">
+                                            <a href="#">
+                                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                                    <use xlink:href="images/icons/sprite.svg#instagram"></use>
+                                                </svg>
+                                            </a>
+                                        </li>
+                                        <li class="contact__social-item">
+                                            <a href="#">
+                                                <svg width="24" height="24" viewBox="0 0 24 24">
+                                                    <use xlink:href="images/icons/sprite.svg#facebook"></use>
+
+                                                </svg>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact__map">
+                    </div>
+                </div>
+            </section>
+            <section class="contact__form">
+                <div class="form__popup">
+                    <div class="form__popup-top">
+                        <div class="form__popup-image">
+                            <img src="images/app/success.svg" alt="success icon">
+                        </div>
+                        <h3 class="form__popup-header">Success!</h3>
+                    </div>
+                    <div class="form__popup-bottom">
+                        <p class="form__popup-paragraph">Your message has been
+                            sent successfully</p>
+                        <button class="form__popup-button btn-3">OK, THANKS</button>
+                    </div>
+                </div>
+
+                <form class="form">
+                    <div class="form__title">
+                        <h2>GET IN TOUCH</h2>
+                        <span>Contact Us</span>
+                        <p>If you have questions or suggestions for us, do not hesitate, we will be happy to reply
+                            you</p>
+                    </div>
+                    <div class="form__wrapper">
+                        <div class="form__item">
+                            <label for="sender_name">Name</label>
+                            <input type="text" id="sender_name" name="sender_name" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="sender_email">Email</label>
+                            <input type="email" id="sender_email" name="sender_email" required>
+                        </div>
+                        <div class="form__item">
+                            <label for="sender_message">Message</label>
+                            <textarea type="textarea" id="sender_message" name="sender_message" required></textarea>
+                        </div>
+                        <button id="form-button" class="btn-1 center" type="submit">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use xlink:href="images/icons/sprite.svg#paper_plane"></use>
+                            </svg>
+                            SEND
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

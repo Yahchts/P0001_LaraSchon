@@ -1,0 +1,10 @@
+.blog {
+
+  &__title {
+    @extend .heading-3;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+}
+

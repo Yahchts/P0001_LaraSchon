@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/app/favicon.svg" type="image/svg+xml">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+    <title>Microbiome Face Cream</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div id="product">
+            <section class="vision" style="background-image: url(images/bg_04.jpg)">
+                <h1 class="vision__title">PRODUCTS</h1>
+            </section>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li><a class="breadcrumbs__item" href="/">HOME</a></li>
+                    <li><a class="breadcrumbs__item" href="products.html">PRODUCTS</a></li>
+                    <li><a class="breadcrumbs__item" href="#">MICROBIOME FACE CREAM</a></li>
+                </ul>
+            </div>
+            <section class="product">
+                <div class="container">
+                    <div class="product__content">
+                        <div class="product__image">
+                            <img class="product__image-main" src="images/products/item_01.jpg" alt="cosmetics">
+                            <img class="product__image-alt" src="images/products/item_01-2.jpg" alt="cosmetics">
+                        </div>
+                        <div class="product__details">
+                            <h2 class="product__details-title">MICROBIOME FACE CREAM</h2>
+                            <p class="product__details-desc">Skin food face cream<br>Multi-peptides</p>
+                            <p class="product__details-weight">50 ml | 1.7 fl.oz.</p>
+                            <h5 class="product__details-price">€150,00</h5>
+                            <div class="product__details-item">
+                                <div class="product__details-name">Skin type:</div>
+                                <div class="product__details-content">
+                                    <ul>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#ok"></use>
+                                            </svg>
+                                            For all skin types
+                                        </li>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#ok"></use>
+                                            </svg>
+                                            Dry, dehydrated skin
+                                        </li>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#ok"></use>
+                                            </svg>
+                                            Damaged, oily and combination skin
+                                        </li>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#ok"></use>
+                                            </svg>
+                                            Mature skin, the best skin care needed
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__details-item">
+                                <div class="product__details-name">Contains NO:</div>
+                                <div class="product__details-content">
+                                    <ul>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#no"></use>
+                                            </svg>
+                                            no silicones
+                                        </li>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#no"></use>
+                                            </svg>
+                                            no mineral oil
+                                        </li>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#no"></use>
+                                            </svg>
+                                            no parabens
+                                        </li>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#no"></use>
+                                            </svg>
+                                            no paraffin
+                                        </li>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#no"></use>
+                                            </svg>
+                                            no dyes
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__details-item">
+                                <div class="product__details-name">Components:</div>
+                                <div class="product__details-content">
+                                    <ul>
+                                        <li>
+                                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                                <use xlink:href="images/icons/sprite.svg#vegan"></use>
+                                            </svg>
+                                            Vegan
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="product__details-item">
+                                <div class="product__details-name">Active ingredients:</div>
+                                <div class="product__details-content">
+                                    <ul>
+                                        <li>Anti-aging Complex (Argireline&#174;, Matrixyl™3000 , Junvinity™), Low, Medium
+                                            and High Molecular Weight Triple Hyaluronic Acid, Liposomal Encapsulated
+                                            Vitamin C, Brazilian Cress Extract, Barley Extract, Lingonberry Extract,
+                                            Blueberry Extract, Rosehip Extract, Noni Berries Extract, Goji Berries
+                                            Extract, Sunflower Oil, Jojoba Oil, Shea Butter, Provitamin B5, Vitamin E.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tabs__wrapper">
+                                <div class="tabs__nav">
+                                    <div id="btn1" class="tabs__btn active">DESCRIPTION</div>
+                                    <div id="tab1" class="tab__panel tab-active">
+                                        <ul>
+                                            <li>Makes the skin more elastic and firm</li>
+                                            <li>Prolongs the life cycle of skin cells and thus slows down the skin
+                                                aging
+                                                process
+                                            </li>
+                                            <li>Stimulates collagen synthesis, prevents the destruction of collagen
+                                                fibers
+                                                and reduces oxidative stress
+                                            </li>
+                                            <li>Reduces the depth of wrinkles, maintains skin elasticity</li>
+                                            <li>Result: elastic, smooth, even and radiant skin</li>
+                                        </ul>
+                                    </div>
+
+                                    <div id="btn2" class="tabs__btn">HOW TO USE</div>
+                                    <div id="tab2" class="tab__panel">
+                                        <ul>
+                                            <li>
+                                                <p>Apply a thin layer of the cream on cleansed face, neck and
+                                                    décolleté
+                                                    skin by flapping movements or massage gently.
+                                                    Rejuvenating skin food cream is formulated to make your skin
+                                                    perfect, it boosts cell regeneration, deeply moisturizes and
+                                                    smooths
+                                                    wrinkles.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div id="btn3" class="tabs__btn">INGREDIENTS</div>
+                                    <div id="tab3" class="tab__panel">
+                                        <ul>
+                                            <li class="ingredient-font"><p>AQUA (WATER), PRUNUS AMYGDALUS DULCIS OIL,
+                                                CAPRYLIC / CAPRIC TRIGLYCERIDE, PENTYLENE GLYCOL, POLYGLYCERYL-3
+                                                DICITRATE / STEARATE, BUTYLENE GLYCOL, BUTYROSPERMUM PARKII BUTTER, OLEA
+                                                EUROPAEA FRUIT OIL, PERSEA GRATISSIMA OIL, SQUALANE, CETYL ALCOHOL,
+                                                STEARYL ALCOHOL, NIACINAMIDE, GLYCERYL CITRATE / LACTATE / LINOLEATE /
+                                                OLEATE, SODIUM HYALURONATE, SILVER CITRATE, GUAIAZULENE, PANTHENOL,
+                                                ESCIN, TOCOPHEROL, CHAMOMILLA RECUTITA FLOWER EXTRACT, RUSCUS ACULEATUS
+                                                ROOT EXTRACT, CALENDULA OFFICINALIS FLOWER EXTRACT, CENTELLA ASIATICA
+                                                EXTRACT, HYDROLYZED YEAST PROTEIN, AMMONIUM GLYCYRRHIZATE, TOCOPHERYL
+                                                ACETATE, GLYCERIN, CITRIC ACID, XANTHAN GUM, DIPROPYLENE GLYCOL,
+                                                POTASSIUM SORBATE, SODIUM BENZOATE, PHENOXYETHANOL,
+                                                ETHYLHEXYLGLYCERIN.</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="product__similar">
+                <div class="container">
+                    <h3 class="product__title">Our Premium Skin Care</h3>
+                    <ul class="cards">
+                        <li class="card-2">
+                            <div class="card-2__item">
+                                <div class="card-2__image-wrap">
+                                    <img src="images/products/item_02.jpg" class="card__image" alt="card image">
+                                </div>
+                                <h6 class="card-2__title">
+                                    EYE LIFT CREAM
+                                </h6>
+                                <p class="card-2__description">
+                                    Rich, Peptide + Vitamins<br>Anti-Age
+                                </p>
+                                <p class="card-2__description">
+                                    15 ml
+                                </p>
+                                <p class="card-2__price">
+                                    €120,00
+                                </p>
+                                <a href="products-eye_lift_cream.html" class="btn-1">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                    </svg>
+                                    VIEW
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card-2">
+                            <div class="card-2__item">
+                                <div class="card-2__image-wrap">
+                                    <img src="images/products/item_03.jpg" class="card__image" alt="card image">
+                                </div>
+                                <h6 class="card-2__title">
+                                    HYALURON BOOSTER CREAM
+                                </h6>
+                                <p class="card-2__description">
+                                    Rich, Deep Moisturizer<br>Multi-Filler, all skin types
+                                </p>
+                                <p class="card-2__description">
+                                    50 ml
+                                </p>
+                                <p class="card-2__price">
+                                    €150,00
+                                </p>
+                                <a href="products-hyaluron_booster_cream.html" class="btn-1">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                    </svg>
+                                    VIEW
+                                </a>
+                            </div>
+                        </li>
+                        <li class="card-2">
+                            <div class="card-2__item">
+                                <div class="card-2__image-wrap">
+                                    <img src="images/products/item_04.jpg" class="card__image" alt="card image">
+                                </div>
+                                <h6 class="card-2__title">
+                                    SILVER MASK
+                                </h6>
+                                <p class="card-2__description">
+                                    Moisturize & Refresh, SOS Complex<br>Anti-Stress, all skin types
+                                </p>
+                                <p class="card-2__description">
+                                    50 ml
+                                </p>
+                                <p class="card-2__price">
+                                    €130,00
+                                </p>
+                                <a href="products-silver_mask.html" class="btn-1">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                    </svg>
+                                    VIEW
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="banner" style="background-image: url(images/bg_02.jpg)">
+                <div class="banner-inner">
+                    <img class="banner-image" src="images/app/deco_leaf.svg" alt="banner image">
+                    <h2 class="banner-title">Our Premium Skin Care<br>
+                        for your beauty</h2>
+                    <a class="btn-2" href="contact.html">CONTACT US</a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

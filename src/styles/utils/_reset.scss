@@ -1,0 +1,169 @@
+@import "~normalize-scss/sass/normalize/import-now";
+/* reset */
+
+*, *:before, *:after {
+	box-sizing: border-box;
+	-webkit-text-size-adjust: none;
+}
+
+:root {
+	-webkit-text-size-adjust: none;
+	-ms-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+[type=reset], [type=submit], button,
+input:not( [type=checkbox] ), input:not( [type=radio] ) {
+	-webkit-appearance: none;
+}
+
+/* outline: none */
+input, input:focus,
+option, option:focus,
+select, select:focus,
+textarea:focus, textarea,
+button, button:focus {
+	outline: none;
+	//font-family: inherit;
+}
+
+button {
+	font-family: inherit;
+}
+
+:root, body {
+	height: 100%;
+}
+
+/* reset address */
+address {
+	font-style: normal;
+}
+
+ul, dl, dd, dt {
+	margin: 0;
+}
+
+ul {
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a[href] {
+	text-decoration: none;
+}
+
+a[href]:hover {
+	text-decoration: none;
+}
+
+a {
+	color: inherit;
+}
+
+a[href], button {
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: 50% 50%;
+}
+
+svg,
+path {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	position: relative;
+	background-color: #fff;
+	-webkit-text-size-adjust: 100%;
+	font-family: $defFonts;
+	font-size: 100%;
+	line-height: normal;
+	font-style: normal;
+}
+
+.pc {
+	@include media('<sm') {
+		display: none !important;
+	}
+}
+
+.sp {
+	@include media('>=sm') {
+		display: none !important;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	max-width: 100%;
+	min-height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+.app {
+	display: block;
+	width: 100%;
+	max-width: 100%;
+	min-height: 1px;
+	flex-grow: 1;
+}
+
+.container {
+
+	max-width: container-width($container-width, $container-offset);
+	display: block;
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: $container-offset;
+	padding-right: $container-offset;
+	box-sizing: border-box;
+
+	&_fluid {
+		max-width: 100%;
+		width: 100%;
+		padding-left: $container-offset;
+		padding-right: $container-offset;
+	}
+
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+.sr-only {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: auto;
+	margin: 0;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	white-space: nowrap;
+}

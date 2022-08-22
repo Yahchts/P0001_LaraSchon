@@ -1,0 +1,41 @@
+.vision {
+  position: relative;
+  width: 100vw;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @include media('<md') {
+    max-height: 350px;
+  }
+
+  @include media('<sm') {
+    max-height: 280px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $color-2;
+    opacity: 0.2;
+  }
+
+  &__title {
+    @extend .heading-1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $color-1;
+    text-align: center;
+
+    @include media('<sm') {
+      top: 146px;
+    }
+  }
+
+}

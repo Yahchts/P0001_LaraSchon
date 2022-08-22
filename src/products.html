@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/app/favicon.svg" type="image/svg+xml">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+    <title>Product</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div id="products">
+            <section class="vision" style="background-image: url(images/bg_04.jpg)">
+                <h1 class="vision__title">PRODUCTS</h1>
+            </section>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li><a class="breadcrumbs__item" href="/">HOME</a></li>
+                    <li><a class="breadcrumbs__item" href="#">PRODUCTS</a></li>
+                </ul>
+            </div>
+            <section class="products">
+                <div class="container">
+                    <div class="products__inner">
+                        <div class="products__head">
+                            <div class="products__head-image">
+                                <img src="images/app/deco_leaf-2.svg" alt="decoration image">
+                            </div>
+                            <h2 class="products__head-title">Discover Lara Schön products</h2>
+                            <h4 class="products__head-paragraph">Our skincare products are designed to work with all skin
+                                types, not against them</h4>
+                        </div>
+                        <ul class="cards">
+                            <li class="card-2">
+                                <div class="card-2__item">
+                                    <div class="card-2__image-wrap">
+                                        <img src="images/products/item_01.jpg" class="card__image" alt="card image">
+                                    </div>
+                                    <h6 class="card-2__title">
+                                        MICROBIOME FACE CREAM
+                                    </h6>
+                                    <p class="card-2__description">
+                                        Skin food face cream<br>Multi-peptides
+                                    </p>
+                                    <p class="card-2__description">
+                                        50 ml
+                                    </p>
+                                    <p class="card-2__price">
+                                        €150,00
+                                    </p>
+                                    <a href="products-microbiome_face_cream.html" class="btn-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                        </svg>
+                                        VIEW
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card-2">
+                                <div class="card-2__item">
+                                    <div class="card-2__image-wrap">
+                                        <img src="images/products/item_02.jpg" class="card__image" alt="card image">
+                                    </div>
+                                    <h6 class="card-2__title">
+                                        EYE LIFT CREAM
+                                    </h6>
+                                    <p class="card-2__description">
+                                        Rich, Peptide + Vitamins<br>Anti-Age
+                                    </p>
+                                    <p class="card-2__description">
+                                        15 ml
+                                    </p>
+                                    <p class="card-2__price">
+                                        €120,00
+                                    </p>
+                                    <a href="products-eye_lift_cream.html" class="btn-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                        </svg>
+                                        VIEW
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card-2">
+                                <div class="card-2__item">
+                                    <div class="card-2__image-wrap">
+                                        <img src="images/products/item_03.jpg" class="card__image" alt="card image">
+                                    </div>
+                                    <h6 class="card-2__title">
+                                        HYALURON BOOSTER CREAM
+                                    </h6>
+                                    <p class="card-2__description">
+                                        Rich, Deep Moisturizer<br>Multi-Filler, all skin types
+                                    </p>
+                                    <p class="card-2__description">
+                                        50 ml
+                                    </p>
+                                    <p class="card-2__price">
+                                        €150,00
+                                    </p>
+                                    <a href="products-hyaluron_booster_cream.html" class="btn-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                        </svg>
+                                        VIEW
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card-2">
+                                <div class="card-2__item">
+                                    <div class="card-2__image-wrap">
+                                        <img src="images/products/item_04.jpg" class="card__image" alt="card image">
+                                    </div>
+                                    <h6 class="card-2__title">
+                                        SILVER MASK
+                                    </h6>
+                                    <p class="card-2__description">
+                                        Moisturize & Refresh, SOS Complex<br>Anti-Stress, all skin types
+                                    </p>
+                                    <p class="card-2__description">
+                                        50 ml
+                                    </p>
+                                    <p class="card-2__price">
+                                        €130,00
+                                    </p>
+                                    <a href="products-silver_mask.html" class="btn-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                        </svg>
+                                        VIEW
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card-2">
+                                <div class="card-2__item">
+                                    <div class="card-2__image-wrap">
+                                        <img src="images/products/item_05.jpg" class="card__image" alt="card image">
+                                    </div>
+                                    <h6 class="card-2__title">
+                                        VITAMIN POWER MASK
+                                    </h6>
+                                    <p class="card-2__description">
+                                        Anti-Ox, Boosts and tones,<br>Skin Food, all skin types
+                                    </p>
+                                    <p class="card-2__description">
+                                        50 ml
+                                    </p>
+                                    <p class="card-2__price">
+                                        €130,00
+                                    </p>
+                                    <a href="products-vitamin_power_mask.html" class="btn-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                        </svg>
+                                        VIEW
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="card-2">
+                                <div class="card-2__item">
+                                    <div class="card-2__image-wrap">
+                                        <img src="images/products/item_06.jpg" class="card__image" alt="card image">
+                                    </div>
+                                    <h6 class="card-2__title">
+                                        HYDRO BOOSTER MASK
+                                    </h6>
+                                    <p class="card-2__description">
+                                        Anti-Age, Radiance & Detox,<br>Cell-NutriComplex, all skin types
+                                    </p>
+                                    <p class="card-2__description">
+                                        50 ml
+                                    </p>
+                                    <p class="card-2__price">
+                                        €130,00
+                                    </p>
+                                    <a href="products-hydro_booster_mask.html" class="btn-1">
+                                        <svg width="24" height="24" viewBox="0 0 24 24">
+                                            <use xlink:href="images/icons/sprite.svg#eye"></use>
+                                        </svg>
+                                        VIEW
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="banner" style="background-image: url(images/bg_05.jpg)">
+                <div class="banner-inner">
+                    <img class="banner-image" src="images/app/deco_leaf.svg" alt="banner image">
+                    <h2 class="banner-title">Our Premium Skin Care<br>
+                        for your beauty</h2>
+                    <a href="contact.html" class="btn-2">
+                        CONTACT US
+                    </a>
+                </div>
+            </section>
+        </div>
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

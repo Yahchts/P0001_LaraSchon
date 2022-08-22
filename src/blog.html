@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/app/favicon.svg" type="image/svg+xml">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+    <title>Blog</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div id="blog">
+            <section class="vision" style="background-image: url(images/bg_01.jpg)">
+                <h1 class="vision__title">BLOG</h1>
+            </section>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li><a class="breadcrumbs__item" href="/">HOME</a></li>
+                    <li><a class="breadcrumbs__item" href="#">BLOG</a></li>
+                </ul>
+            </div>
+            <section class="blog">
+                <div class="container">
+                    <h2 class="blog__title">News</h2>
+                    <ul class="cards">
+                        <li class="card">
+                            <a class="card__link" href="blog-single-06-08-22.html">
+                                <div class="card__image-wrap">
+                                    <img src="images/img_01.jpg" class="card__image" alt="card image">
+                                </div>
+                                <p class="card__date">
+                                    August 6, 2022
+                                </p>
+                                <h3 class="card__title">
+                                    Be Perfect with Lara Schön Products
+                                </h3>
+                                <p class="card__description">
+                                    Microbiome Skin Food Cream is a new face care product in the Lara Schön line of face creams. The perfect formula of the cream combines the...
+                                </p>
+                                <div class="card__read-more">READ MORE
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="images/icons/sprite.svg#arrow_right"></use>
+                                    </svg>
+                                </div>
+
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="banner" style="background-image: url(images/bg_02.jpg)">
+                <div class="container">
+                    <div class="banner-inner">
+                        <img class="banner-image" src="images/app/deco_leaf.svg" alt="banner image">
+                        <h2 class="banner-title">Our Premium Skin Care<br>for your beauty</h2>
+                        <a href="products.html" class="btn-2">
+                            VIEW ALL PRODUCTS
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

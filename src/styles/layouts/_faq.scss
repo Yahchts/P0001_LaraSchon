@@ -1,0 +1,35 @@
+.faq {
+  margin-top: 80px;
+
+  &__header {
+    @extend .heading-3;
+    color: $color-1;
+  }
+
+  &__restricted {
+    margin-top: 12px;
+
+    &-list {
+
+    }
+
+    &-item {
+      @extend .text-2;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      color: #D0A0A0;
+
+      &:last-child{
+        margin-bottom: 30px;
+      }
+
+
+      svg {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+      }
+    }
+  }
+}

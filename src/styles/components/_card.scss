@@ -1,0 +1,102 @@
+.cards {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 30px;
+  @include media('<md') {
+    column-gap: 30px;
+  }
+  @include media('<sm') {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 384px;
+  flex: 0 1 calc(100% / 3 - 1em);
+  @include media('<md') {
+    max-width: 50%;
+    flex: 0 1 calc(50% - 1em);
+  }
+  @include media('<sm') {
+    max-width: 100%;
+    flex: 0 1 100%;
+
+  }
+
+  &__link {
+    width: 100%;
+    padding: 20px 20px 30px 20px;
+    background-color: $color-5;
+    transition: 0.3s;
+
+    &:hover {
+      transition: 0.3s;
+      opacity: 0.9;
+
+      .card__read-more {
+        color: $color-7;
+
+        svg {
+          fill: $color-7;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+  &__image {
+    &-wrap {
+      @include object-fit(344, 160);
+    }
+  }
+
+  &__date {
+    @extend .text-5;
+    color: $color-3;
+    margin-top: 30px;
+  }
+
+  &__title {
+    @extend .text-1;
+  }
+
+  &__description {
+    @extend .text-3;
+    width: 100%;
+    margin-top: 12px;
+    color: $color-3;
+  }
+
+  &__read-more {
+    @extend .text-3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 144px;
+    width: 100%;
+    margin-left: auto;
+    padding: 12px 10px;
+    background-color: transparent;
+    transition: 0.3s;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+      fill: $color-1;
+      transition: 0.3s;
+    }
+
+    @include media('<sm') {
+      margin-top: 24px;
+      max-width: 278px;
+    }
+  }
+}
+

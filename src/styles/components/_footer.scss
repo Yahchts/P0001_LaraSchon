@@ -1,0 +1,189 @@
+.footer {
+  margin-top: auto;
+
+  &__inner {
+    width: 100%;
+    background-color: $color-5;
+    @include media('<md') {
+      padding: 15px 40px;
+    }
+    @include media('<sm') {
+      padding: 0 15px;
+    }
+
+    .container {
+      padding: 50px 0;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @include media('<sm') {
+      flex-direction: column;
+    }
+
+    &-item {
+      flex: 1 1 20%;
+      margin: 0 20px;
+
+      @include media('<md') {
+        flex: 1 1 25%;
+      }
+
+      @include media('<sm') {
+        text-align: center;
+      }
+
+      &:first-child {
+        @include media('<md') {
+          flex: 0 1 100%;
+        }
+      }
+    }
+
+
+  }
+
+  &__logo {
+    width: 160px;
+
+    @include media('<md') {
+      margin: 50px auto;
+    }
+
+    @include media('<sm') {
+      margin: 40px auto;
+    }
+  }
+
+  &__title {
+    @extend .heading-6;
+    color: $color-7;
+
+    @include media('<sm') {
+      margin-top: 40px;
+    }
+
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+
+    &-list {
+      margin-top: 12px;
+    }
+
+    &-item {
+      @extend .text-3;
+      margin-top: 12px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &-link {
+      &:hover {
+        transition: 0.3s;
+        color: $color-7;
+      }
+    }
+  }
+
+  &__nav-list {
+    @extend .text-3;
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__nav-item {
+    margin-top: 4px;
+    @include media('<sm') {
+      margin-top: 12px;
+    }
+  }
+
+  &__nav-link {
+    &:hover {
+      transition: 0.3s;
+      color: $color-7;
+    }
+  }
+
+  &__social {
+
+    &-list {
+      display: flex;
+      margin-top: 12px;
+
+      @include media('<sm') {
+        justify-content: center;
+      }
+    }
+
+    &-item {
+      margin-right: 24px;
+      width: 24px;
+      fill: $color-1;
+      transition: 0.3s;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        svg {
+          fill: $color-3;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+
+
+  &__privacy {
+    display: flex;
+    flex-direction: column;
+    @extend .text-5;
+    color: $color-3;
+    margin-top: 30px;
+
+    &-item {
+      margin-top: 12px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    &-link {
+      &:hover {
+        border-bottom: 1px solid $color-3;
+      }
+    }
+  }
+
+  small {
+    @extend .text-5;
+    display: block;
+    background-color: $color-5;
+    text-align: center;
+    padding-bottom: 12px;
+    @include media('<sm') {
+      padding-top: 30px;
+    }
+  }
+
+}
+
+
+

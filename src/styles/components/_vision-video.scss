@@ -1,0 +1,22 @@
+.vision-home {
+  //&__bg-overlay {
+  //  position: absolute;
+  //  top: 0;
+  //  left: 0;
+  //  width: 100vw;
+  //  height: 100vh;
+  //  background-color: #fff;
+  //  opacity: 0.2;
+  //  z-index: -9;
+  //}
+
+  &__video {
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    width: 100vw;
+    height: calc(100vh - 72px);
+    //z-index: -10;
+    object-fit: cover;
+  }
+}

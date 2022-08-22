@@ -1,0 +1,36 @@
+.breadcrumbs {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  &__list {
+    display: flex;
+    padding: 12px 30px;
+
+    li {
+      @extend .text-5;
+      color: $color-3;
+
+      &:hover {
+        text-decoration: none;
+        color: $color-7;
+      }
+
+      &:last-child {
+        pointer-events: none;
+        color: $color-7;
+      }
+
+      &:after {
+        content: '>';
+        padding: 0 8px;
+      }
+
+      &:last-child {
+        &:after {
+          content: '';
+        }
+      }
+    }
+  }
+}

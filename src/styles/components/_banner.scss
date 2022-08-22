@@ -1,0 +1,140 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: 479px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  background-size: cover;
+
+  @include media('<md') {
+    height: 500px;
+    background-attachment: unset;
+
+  }
+
+  @include media('<sm') {
+    height: 600px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+  &-inner {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media('<sm') {
+      padding: 160px 0;
+    }
+
+    .btn-2 {
+      z-index: 1;
+    }
+  }
+
+  &-image {
+    width: 192px;
+    height: 60px;
+    z-index: 1;
+  }
+
+  &-title {
+    @extend .heading-2;
+    margin-top: 30px;
+    color: $color-5;
+    text-align: center;
+    z-index: 1;
+
+    @include media('<sm') {
+      margin-top: 24px;
+    }
+  }
+}
+
+.banner-home {
+
+  position: relative;
+  width: 100%;
+  height: 450px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+
+  @include media('<md') {
+    height: 500px;
+    background-attachment: unset;
+  }
+
+  @include media('<sm') {
+    height: 600px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+  }
+
+  &__inner {
+    padding: 110px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media('<sm') {
+      padding: 160px 0;
+    }
+  }
+
+  &__image {
+    width: 192px;
+    height: 60px;
+    z-index: 1;
+  }
+
+  &__title {
+    @extend .heading-2;
+    position: relative;
+    margin-top: 30px;
+    color: $color-5;
+    text-align: center;
+    z-index: 1;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 140px;
+      height: 4px;
+      left: 50%;
+      top: 130px;
+      background-color: $color-2;
+      transform: translateX(-50%);
+      @include media('<sm') {
+        top: 124px
+      }
+      @include media('<xs') {
+        top: 150px
+      }
+    }
+
+    @include media('<sm') {
+      margin-top: 24px;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+/*
+	vars
+*/
+
+$fonts: '../fonts/';
+$images: '../images/';
+
+$defFonts: 'Lora', 'Montserrat', Arial, Helvetica, Verdana, sans-serif, Georgia, Garamond, 'Times New Roman', serif;
+
+$breakpoints: (
+	xs: 375px,
+	sm: 768px,
+	md: 1024px,
+	lg: 1440px,
+	xl: 1920px,
+);
+
+$color-1: #231F20;
+$color-2: #FFFFFF;
+$color-3: #727272;
+$color-4: #BDBDBD;
+$color-5: #F8F8F8;
+$color-6: #DFEDE3;
+$color-7: #8EB398;
+
+$container-width: 1200px;
+$container-offset: 15px;
+

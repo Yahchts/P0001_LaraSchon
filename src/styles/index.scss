@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+@import "utils/vars";
+@import "~include-media/dist/include-media";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+@import "utils/typography";
+
+/*!* components *!*/
+@import "components/buttons";
+@import "components/header";
+@import "components/footer";
+@import "components/breadcrumbs";
+@import "components/vision";
+@import "components/vision-video";
+@import "components/form";
+@import "components/banner";
+@import "components/card";
+@import "components/card-2";
+@import "components/accordion";
+@import "components/dark-cover";
+
+
+
+/*!* layouts *!*/
+@import "layouts/home";
+@import "layouts/contact";
+@import "layouts/blog";
+@import "layouts/blog-single";
+@import "layouts/products";
+@import "layouts/products-single";
+@import "layouts/about";
+@import "layouts/privacy";
+@import "layouts/faq";
+@import "layouts/404";
+
+
+

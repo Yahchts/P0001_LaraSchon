@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+    <meta name="keywords" content="<%= htmlWebpackPlugin.options.keywords %>">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- og format -->
+    <meta property="og:title" content="">
+    <!-- bar color -->
+    <meta name="theme-color" content="#fff">
+    <meta name="msapplication-navbutton-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fff">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/app/favicon.svg" type="image/svg+xml">
+    <!--<link rel="apple-touch-icon" href="images/apple-touch-icon152.png" sizes="152x152">-->
+    <title>FAQ</title>
+</head>
+<body>
+<div class="wrapper" id="wrapper">
+    <%= _.template(require('./parts/header.html'))() %>
+    <div class="app" id="app">
+        <div id="faq">
+            <section class="vision" style="background-image: url(images/bg_08.jpg)">
+                <h1 class="vision__title">FAQ</h1>
+            </section>
+            <div class="breadcrumbs">
+                <ul class="breadcrumbs__list">
+                    <li><a class="breadcrumbs__item" href="/">HOME</a></li>
+                    <li><a class="breadcrumbs__item" href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <section class="faq">
+                <div class="container">
+                    <div class="faq__header">Frequently Asked Questions</div>
+                    <div class="accordion">
+                        <ul class="accordion__list">
+                            <li class="accordion__item">
+                                <button class="accordion__button" type="button">
+                                    HOW CAN I MAKE SURE THAT I AM NOT BUYING FAKE PRODUCTS?
+                                    <span></span>
+                                </button>
+                                <div class="accordion__content">
+                                    <div class="accordion__content-header">WHAT IS COUNTERFEIT?</div>
+                                    <div class="accordion__content-paragraph">Counterfeit products come from
+                                        unscrupulous businessmen and individuals. Products purchased outside of Lara
+                                        Schön's professional channel come from unknown sources outside the authorized
+                                        distribution chain.
+                                    </div>
+
+                                    <div class="accordion__content-header">WHAT IS THE DANGER OF COUNTERFEIT?</div>
+                                    <div class="accordion__content-paragraph">Counterfeit products may cause irritation
+                                        or even infection.
+                                        They may not be safe to use.
+                                    </div>
+
+                                    <div class="accordion__content-header">WHAT IS LARA SCHÖN DOING TO FIGHT
+                                        COUNTERFEIT?
+                                    </div>
+                                    <div class="accordion__content-paragraph">Lara Schön does everything to stop the
+                                        sales’ channels of fake Lara Schön products with intelligence and investigative
+                                        procedures that uncover perpetrators and their tactics, including the misuse of
+                                        online e-commerce sites.
+                                    </div>
+
+                                    <div class="accordion__content-header">HOW CAN I MAKE SURE THAT I AM NOT BUYING FAKE
+                                        PRODUCTS?
+                                    </div>
+                                    <div class="accordion__content-paragraph">Lara Schön products are sold ONLY through
+                                        authorized professional partners. Our professional partners are specially
+                                        trained to recommend products based on your skin's needs.
+                                    </div>
+
+                                    <div class="accordion__content-header">UNAUTHORIZED SITES</div>
+                                    <div class="accordion__content-paragraph">Counterfeiters often sell their fake
+                                        products through online stores. Products purchased from these sites are
+                                        counterfeit. Lara Schön cannot guarantee their quality or authenticity and
+                                        accepts no responsibility for them.
+                                    </div>
+                                    <div class="accordion__content-paragraph">
+                                        The following websites have not been authorized by Lara Schön to retail our
+                                        products and are in no way associated with Lara Schön's products and brand:
+                                    </div>
+                                    <div class="faq__restricted">
+                                        <ul class="faq__restricted-list">
+                                            <li class="faq__restricted-item">
+                                                <svg width="18" height="18" viewBox="0 0 18 18">
+                                                    <use xlink:href="images/icons/sprite.svg#no"></use>
+                                                </svg>
+                                                laraschon.com
+                                            </li>
+                                            <li class="faq__restricted-item">
+                                                <svg width="18" height="18" viewBox="0 0 18 18">
+                                                    <use xlink:href="images/icons/sprite.svg#no"></use>
+                                                </svg>
+                                                laraschon.ru
+                                            </li>
+                                            <li class="faq__restricted-item">
+                                                <svg width="18" height="18" viewBox="0 0 18 18">
+                                                    <use xlink:href="images/icons/sprite.svg#no"></use>
+                                                </svg>
+                                                lookofyou.ru
+                                            </li>
+                                            <li class="faq__restricted-item">
+                                                <svg width="18" height="18" viewBox="0 0 18 18">
+                                                    <use xlink:href="images/icons/sprite.svg#no"></use>
+                                                </svg>
+                                                laraschoen.com.ua
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <button class="accordion__button" type="button">
+                                    ARE YOUR PRODUCTS TESTED ON ANIMALS?
+                                    <span></span>
+                                </button>
+                                <div class="accordion__content">
+                                    <div class="accordion__content-paragraph">We do not test any products on animals, we love animals.
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="accordion__item">
+                                <button class="accordion__button" type="button">
+                                    WHERE CAN I FIND MORE INFORMATION ON THE INGREDIENTS?
+                                    <span></span>
+                                </button>
+                                <div class="accordion__content">
+                                    <div class="accordion__content-paragraph">All our ingredients are listed at the bottom of each product on our products page.<br>If you would like more information on our ingredients and how they will work for you, feel free to email: info@laraschoen.com
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <%= _.template(require('./parts/footer.html'))() %>
+</div>
+</body>
+</html>

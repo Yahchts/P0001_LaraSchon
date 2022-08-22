@@ -1,0 +1,109 @@
+.accordion {
+  display: block;
+  margin-top: 50px;
+  margin-bottom: 160px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &__list {
+    display: block;
+  }
+
+  &__item {
+    display: block;
+    border-top: 1px solid $color-4;
+
+    &:last-child {
+      border-bottom: 1px solid $color-4;
+
+    }
+
+    &:not(.active) {
+      .accordion__button {
+        &:after {
+          background-size: 27px 2px, 2px 27px;
+        }
+      }
+
+      .accordion__content {
+        display: none;
+      }
+    }
+  }
+
+  &__button {
+    @extend .heading-5;
+    background-color: $color-2;
+    color: $color-1;
+    cursor: pointer;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: .4s;
+    position: relative;
+
+    &:before,
+    &:after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+
+    &:after {
+      content: '';
+      width: 27px;
+      height: 27px;
+      right: 0;
+      background-image: linear-gradient($color-3, $color-3), linear-gradient($color-3, $color-3);
+      background-position: 50%;
+      background-size: 27px 2px, 2px 2px;
+      background-repeat: no-repeat;
+      transition: .3s;
+    }
+
+    &:hover,
+    &.active {
+      //background-color: $color-5;
+
+      &:after {
+
+      }
+    }
+  }
+
+  &__content {
+    display: block;
+    padding: 0 70px 30px 70px;
+    overflow: hidden;
+    position: relative;
+
+
+    @include media('<sm') {
+      padding: 20px 0;
+    }
+
+    &-header {
+      @extend .text-1;
+      margin-top: 30px;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+    }
+
+    &-paragraph {
+      @extend .text-1;
+      color: $color-3;
+      margin-top: 12px;
+    }
+
+  }
+}
