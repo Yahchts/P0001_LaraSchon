@@ -2,6 +2,5 @@
 .DS_store
 
 # Ignore folders
-.idea
 node_modules
 public
