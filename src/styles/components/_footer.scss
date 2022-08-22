@@ -3,7 +3,7 @@
 
   &__inner {
     width: 100%;
-    background-color: $color-5;
+    background-color: $color-8;
     @include media('<md') {
       padding: 15px 40px;
     }
@@ -61,7 +61,6 @@
 
   &__title {
     @extend .heading-6;
-    color: $color-7;
 
     @include media('<sm') {
       margin-top: 40px;
@@ -175,7 +174,7 @@
   small {
     @extend .text-5;
     display: block;
-    background-color: $color-5;
+    background-color: $color-8;
     text-align: center;
     padding-bottom: 12px;
     @include media('<sm') {
