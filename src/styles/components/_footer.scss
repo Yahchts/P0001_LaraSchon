@@ -130,17 +130,26 @@
     }
 
     &-item {
-      margin-right: 24px;
-      width: 24px;
       fill: $color-1;
       transition: 0.3s;
+      min-height: 24px;
+      min-width: 24px;
 
       &:last-child {
         margin-right: 0;
       }
 
+      a {
+        display: block;
+        width: 44px;
+        padding: 10px;
+
+      }
+
       &:hover {
         svg {
+          min-height: 24px;
+          min-width: 24px;
           fill: $color-3;
           transition: 0.3s;
         }
