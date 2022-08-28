@@ -59,7 +59,7 @@ module.exports = (env, argv) => {
 	const IS_STATIC = argv.host === undefined;
 	const IS_SOURCEMAP = argv.sourceMap;
 	const SOURCEMAP = IS_HOST || IS_SOURCEMAP;
-	const DEFAULTS = { description: 'Skin care products are formulated to work with all skin types, not against them. Our luxurious cruelty-free skin care cosmetics delivers real results.', keywords: 'keywords' };
+	const DEFAULTS = { description: 'Skin care products are formulated to work with all skin types, not against them. Our luxurious cruelty-free skin care cosmetics delivers real results.', keywords: 'Lara, Schön, Lara Schön, Lara Schön brand, Skin, Care, Skin care, Cosmetic, products, cosmetics, all skin types' };
 
 	/* Methods */
 	function getHtmlWebpackPlugins( dir, ext, chunkName ) {
