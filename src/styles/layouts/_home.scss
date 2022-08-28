@@ -1,5 +1,9 @@
 .home {
 
+  &__header-hidden {
+    display: none;
+  }
+
   .vision {
     position: relative;
     width: 100vw;

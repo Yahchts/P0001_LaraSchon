@@ -1,0 +1,10 @@
+ErrorDocument 404 /404.html
+RewriteEngine On
+RewriteCond %{HTTPS} off
+    # Проверяем не запрошен ли HTTPS?
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    # Перенаправляем на HTTPS
+RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+    # Проверяем, содержит ли домен www в начале URL.
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+    # Перенаправляем удаляем www
