@@ -80,6 +80,9 @@
     &-item {
       @extend .text-3;
       margin-top: 12px;
+      span {
+        font-weight: 600;
+      }
 
       &:first-child {
         margin-top: 0;
@@ -87,6 +90,11 @@
     }
 
     &-link {
+      span {
+        font-weight: 600;
+      }
+
+
       &:hover {
         transition: 0.3s;
         color: $color-7;
