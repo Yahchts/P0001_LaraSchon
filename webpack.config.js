@@ -300,8 +300,8 @@ module.exports = (env, argv) => {
 	config.devServer = {
 		contentBase: path.resolve(__dirname, './src'),
 		// host: 'YOUR_LOCAL_IP',
-		// host: 'LOCALHOST',
-		host: '192.168.1.14',
+		host: 'LOCALHOST',
+		// host: '192.168.1.14',
 		port: 8080,
 		stats: 'minimal',
 		overlay: true,
