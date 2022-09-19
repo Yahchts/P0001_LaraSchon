@@ -21,5 +21,3 @@ $fields = [
     $headers .= 'Reply-To: ' . $mail_from . "\r\n";
 
 mail($mail_to, $subject, $body_message, $headers);
-
-?>
